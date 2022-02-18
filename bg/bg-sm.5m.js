@@ -36,7 +36,7 @@ const { VAR_EMAIL, VAR_PASSWORD } = env;
     ${value} ${arrow(trend)}
     ---
     ${value} ${unit}
-    ${delta}${arrow(trend)}
+    ${delta} ${arrow(trend)}
     ---
     See on sugarmate | href="https://sugarmate.io/home"
   `);
@@ -48,6 +48,10 @@ const arrow = (str) => {
   switch(str) {
     case "FLAT":
       return "→";
+    case "FORTY_FIVE_UP":
+      return "↗"
+    case "FORTY_FIVE_DOWN":
+      return "↘"
     default:
       return "❓";
   }
