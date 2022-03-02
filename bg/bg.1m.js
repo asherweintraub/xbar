@@ -36,7 +36,7 @@ const arrow = (str) => {
       return "↘"
     case "SingleUp":
       return "↑"
-    case "Single Down":
+    case "SingleDown":
       return "↓"
     case "DoubleUp":
       return "⇈"
